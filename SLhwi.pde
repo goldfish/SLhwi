@@ -4,22 +4,26 @@
 // see README file for license information
 // 
 
+// set up 7 footswitches monitoring
 int buttonF[] = { 23,25,27,29,31,33,35 };
 boolean buttonFstate[7];
 boolean buttonFstatePREV[] = { 0,0,0,0,0,0,0 };
 
+// set up 5 sliders monitoring
 int slider[] = { 0, 1, 2, 3, 4 };
 int sliderValue[5];
 int sliderValuePREV[5];
 
+// set up polling of inputs on timers so we don't have to use delays
 unsigned long currentTime;
 unsigned long nextFbuttonPoll = 0;
 unsigned long nextSliderPoll = 0;
 
 void setup(){
-    Serial.begin( 57600 ); // 9600 for dev/Serial Monitor use
-    delay( 500 ); // delay time to turn on serial monitor
-    for( int i=0;i<5;i++ ){
+    Serial.begin( 57600 ); // make sure to set your serial monitor at the right speed if debugging
+    delay( 500 ); // delay to give time to turn on serial monitor
+    
+    for( int i=0;i<5;i++ ){ 
         sliderValue[i] = analogRead( slider[i] );
         Serial.print( "/AM/S/" );
         Serial.print( i );
