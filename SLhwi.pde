@@ -1,7 +1,7 @@
 // SLhwi.pde
 // Arduino mega interface for controlling SooperLooper through PureData
 // written by goldfish Copyright (c) 2011. All rights reserved.
-// see LICENSE file for license information
+// see README file for license information
 // 
 
 int buttonF[] = { 23,25,27,29,31,33,35 };
