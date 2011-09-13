@@ -1,7 +1,9 @@
 # SLhwi
 written by goldfish
 
-Arduino code for interfacing with puredata and SooperLooper
+Designed for use with http://github.com/goldfish/slOSC
+a PureData program to control SooperLooper with OSC messages
+This allows you to have a physical controller for SooperLooper
 
 * Copyright (c) 2011, goldfish
 * All rights reserved.
