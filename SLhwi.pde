@@ -25,10 +25,10 @@ void setup(){
     
     for( int i=0;i<5;i++ ){ 
         sliderValue[i] = analogRead( slider[i] );
-        Serial.print( "/AM/S/" );
-        Serial.print( i );
-        Serial.print( " " );
-        Serial.println( sliderValue[i] );
+        //Serial.print( "/AM/S/" );
+        //Serial.print( i );
+        //Serial.print( " " );
+        //Serial.println( sliderValue[i] );
     }
     for( int i=0;i<7;i++ ){
         pinMode( buttonF[i], INPUT );  
@@ -38,10 +38,10 @@ void setup(){
         // Using internal pull-ups and N/O momentary buttons tied to ground
         // our default pin state is high when the button is not being pressed.
         // we take the inverse of this for our switch state so being pressed is 1
-        Serial.print( "/AM/F/" );
-        Serial.print( i );
-        Serial.print( " " );
-        Serial.println( buttonFstate[i], BIN );
+        //Serial.print( "/AM/F/" );
+        //Serial.print( i );
+        //Serial.print( " " );
+        //Serial.println( buttonFstate[i], BIN );
     }
 }
 
